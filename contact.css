@@ -1,0 +1,100 @@
+﻿
+#form_container {
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('images/blackk.jpg');
+    background-size: 100% 100%;
+    padding: 15px 15px;
+    margin-top: 15px;
+    color: white;
+    margin: 10px 170px;
+    width: 85%;
+    height:590px;
+    left:-100px;
+}
+body
+{
+	background-color: #E0DED8;
+}
+#form_container input[type='text'],
+#form_container input[type='email'],
+#form_container textarea
+{
+	background: rgba(255, 255, 255, 0.08);	
+}
+.form-control
+{
+	color: white;
+}
+.nav-align
+{
+        height: 100px;
+          background-color:#d4d1d1;
+}
+.nav-design
+{
+    position: relative;
+    top: 35px;
+    /* margin-left: 129px; */
+    left: -70px;
+    font-size: 20px;
+    /* margin-right: 22px; */
+}
+.li :hover{
+    background-color:white !important;
+    color:black !important;
+    height:50px !important;
+    width:200px !important;
+    text-align:center;
+    border-radius:3px 3px;
+}
+.li :active
+{
+    background-color:white !important;
+    color:black !important;
+}
+.li
+{
+    margin-right:10px;
+}
+.footer
+{
+       background-color: black;
+    width: 100%;
+    height: 150px;
+    color:gray;
+
+}
+.icons {
+    display: inline;
+    font-size: 38px;
+    left: 635px;
+    position: relative;
+    top: 20px;
+    
+}
+.p-align
+{
+        position: relative;
+    font-size: 20px;
+    top: 15px;
+    left: 750px;
+}
+.icons-align
+{
+    margin-right:10px;
+}
+.p1-align
+{
+        position: relative;
+    top: 20px;
+    left: -32px;
+}
+.color
+{
+    color:gray !important;
+}
+.row-align
+{
+        margin-top: 150px;
+    margin-bottom: 45px;
+}
+

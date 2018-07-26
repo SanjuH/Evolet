@@ -1,0 +1,175 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Complete Contact Form Using HTML, CSS, Javascript And PHP - reusable form</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/font-awesome.min.css" rel="stylesheet" />
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="scripts/jquery-3.3.1.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    
+
+    <link href="contact.css" rel="stylesheet" />
+    <script src="form.js"></script>
+
+</head>
+<body>
+    <div style="overflow-x:hidden;">
+        <div>
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid nav-align">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="http://www.evolettechnologies.com">
+                            <img src="images/logo41.png" />
+                        </a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse nav-design" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="li"><a href="Template.html">HOME <span class="sr-only">(current)</span></a></li>&nbsp;&nbsp;
+                            <li class="li"><a href="Domain.html">DOMAIN <span class="sr-only">(current)</span></a></li>
+                            <li class="li"><a href="Admin.php">ADMIN <span class="sr-only">(current)</span></a></li>
+                            <li class="li"><a href="employee.php">EMPLOYEE <span class="sr-only">(current)</span></a></li>
+                            <li class="li"><a href="About.html">ABOUT US <span class="sr-only">(current)</span></a></li>
+                            <li class="li"><a href="contactus.html">CONTACT US <span class="sr-only">(current)</span></a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+        </div>
+        <div class="container"  >
+            <div class="row row-align">
+                <div class="col-md-6 col-md-offset-3" id="form_container">
+                    <h2>Contact Us</h2>
+                    <p> Please send your message below. We will get back to you at the earliest! </p>
+                    <form name="emp" role="form" method="post" id="reused_form" action="i4.php">
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <label for="message"> Message:</label>
+                                <textarea class="form-control" type="textarea" id="message" name="message" maxlength="6000" rows="7" required></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <label for="name"> Your Name:</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="col-sm-6 form-group">
+                                <label for="email"> Your Email:</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                        <div class="col-sm-6 form-group">
+                            <label for="name"> Your Contact Number:</label>
+                            <input type="text" class="form-control" onkeypress="return isNumberKey(event)"  name="num"  required>
+                        </div>
+                   
+                        <div class="col-sm-6 form-group" >
+                            <label for="name"> Your Address:</label>
+                            <input type="text" class="form-control" id="name" name="addr" required>
+                        </div>
+                    </div>
+                        <div class="row" style="position: relative;left: -430px;top: 10px">
+                            <div class="col-sm-12 form-group">
+                                <button type="submit" class="btn btn-lg btn-default pull-right">Send &rarr;</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Posted your message successfully!</h3> </div>
+                    <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+         function validate_form() {
+            if (document.emp.emp_name.value == "") {
+                alert("Please fill in the 'Your Employee Name' box.");
+                return false;
+            }
+            if (document.emp.num.value == "") {
+                alert("Enter Employee Number");
+                return false;
+            }
+            alert("sucessfully Submitted");
+
+
+
+            if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/).test(document.emp.eem.value)) {
+                alert("You have entered an invalid email address!")
+                return (false)
+            }
+        }
+
+        function isNumberKey(evt) {
+            var f=0;
+            var p=document.forms["emp"]["num"].value;
+            if(p.length>=10)
+            {
+                alert("Phone Number Limit Is 10 Digits");
+                return false;
+            }
+            // if(p.length==10)
+            // {
+            //     f=1;
+            //    }
+            // if(f==0)
+            // {
+            //     alert("Invalid Phone Number");
+            //     return false;
+            // }
+            var charCode = (evt.which) ? evt.which : event.keyCode;
+            if (charCode != 46 && charCode > 31 &&
+                (charCode < 48 || charCode > 57)) {
+                alert("Enter Number");
+                return false;
+            }
+            return true;
+        }
+        function isNumberKey1(evt) {
+            var charCode = (evt.which) ? evt.which : event.keyCode;
+            if ((charCode > 48 && charCode < 57 ||charcode >96 && charcode <105)) {
+                alert("Enter Only Character");
+                return false;
+            }
+            return true;
+        }
+        
+</script>
+        <div class="footer">
+            <div>
+                <p class="p-align">Follow Us On</p>
+                <div>
+                    <ul class="icons">
+                        <a href="https://twitter.com/evoletblr" class="color"><i class="fa fa-twitter-square icons-align"></i></a>
+                        <a href="https://www.facebook.com/Evolet-Technologies-1988856154659946/" class="color"><i class="fa fa-facebook-square icons-align"></i></a>
+                        <a href="#" class="color"><i class="fa fa-skype icons-align"></i></a>
+                        <a href="https://www.youtube.com/channel/UCUD_joTvV9Q422yToKB7lCA" class="color"><i class="fa fa-youtube-square icons-align"></i></a>
+                        <a href="https://linkedin.com/company/evolettechnologies" class="color"><i class="fa fa-linkedin-square icons-align"></i></a>
+                        <a href="https://plus.google.com/u/1/collection/g1v1WE" class="color"><i class="fa fa-google-plus-square icons-align"></i></a>
+
+                    </ul>
+                </div>
+                <p class="text-center cpy-text p1-align">&copy; 2017 - Privacy Policy</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

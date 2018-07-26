@@ -1,0 +1,86 @@
+body{
+    background-color: rgba(0, 0, 0, 0.37);
+}
+body img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.emp{
+    background-color: rgba(150, 143, 143, 0.37);
+    width: 350px;
+    height: 150px;
+    color: white;
+    border-radius:10px; 
+    top: 325px;
+    position: relative;
+    left: 157px;
+}
+.emp h2{
+    font-size: 26px; 
+    text-align: center;
+    padding: 10px;
+}
+#btn{
+    border-radius: 10px;
+    width: 150px;
+    height: 50px;
+    padding: 5px;
+    background-color: white;
+    color: black;
+    position: relative;
+    left: 100px;
+}
+#btn:hover{
+    background-color: rgba(0, 0, 0, 0.31);
+    color: white;
+    width: 170px;
+    height: 60px;
+    font-size: 20px;
+    
+}
+.int{
+    background-color: rgba(150, 143, 143, 0.37);
+    width: 350px;
+    height: 150px;
+    color: white;
+    border-radius:10px; 
+    top: 153px;
+    left: 523px;
+    position: relative;
+}
+.int h2{
+    font-size: 26px; 
+    text-align: center;
+    padding: 10px;
+}
+.att{
+    background-color: rgba(150, 143, 143, 0.37);
+    width: 350px;
+    height: 150px;
+    color: white;
+    border-radius:10px; 
+    top: -18px;
+    left: 890px;
+    position: relative;
+}
+.att h2{
+    font-size: 26px; 
+    text-align: center;
+    padding: 10px;
+}
+.pro{
+    background-color: rgba(150, 143, 143, 0.37);
+    width: 350px;
+    height: 150px;
+    color: white;
+    border-radius:10px; 
+    top: -160px;
+    left: 300px;
+    position: relative;
+}
+.pro h2{
+    font-size: 26px; 
+    text-align: center;
+    padding: 10px;
+}

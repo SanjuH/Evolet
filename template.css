@@ -1,0 +1,230 @@
+﻿.nav-align
+{
+        height: 100px;
+        background-color:#d4d1d1;
+}
+.nav-design
+{
+    position: relative;
+    top: 35px;
+    /* margin-left: 129px; */
+    left: -70px;
+    font-size: 20px;
+    /* margin-right: 22px; */
+}
+.li :hover{
+    background-color:white !important;
+    color:black !important;
+    height:50px !important;
+    width:200px !important;
+    text-align:center;
+    border-radius:3px 3px;
+}
+.li :active
+{
+    background-color:white !important;
+    color:black !important;
+}
+.li
+{
+    margin-right:10px;
+}
+.footer
+{
+       background-color: black;
+    width: 100%;
+    height: 150px;
+    color:gray;
+
+}
+
+.icons {
+    display: inline;
+    font-size: 38px;
+    left: 635px;
+    position: relative;
+    top: 20px;
+    
+}
+.p-align
+{
+        position: relative;
+    font-size: 20px;
+    top: 15px;
+    left: 750px;
+}
+.icons-align
+{
+    margin-right:10px;
+}
+.p1-align
+{
+        position: relative;
+    top: 20px;
+    left: -32px;
+}
+.color
+{
+    color:gray !important;
+}
+.p1
+{
+    position: relative;
+    top: 155px;
+}
+.img-align
+{
+    overflow-x:hidden;
+}
+.img-des
+{
+        position: relative;
+    left: -15px;
+    top: 101px;
+    height: 700px;
+    width: 1687px;
+    opacity: 0.7;
+}
+.tag-design
+{
+        position: relative;
+    top: -275px;
+    font-family: sans-serif;
+    font-size: 65px;
+    text-align: center;
+    color: black;
+    opacity:0.9;
+    font-weight:bolder;
+}
+.p2-des
+{
+        position: relative;
+    top: -100px;
+    text-align: center;
+    font-size: 30px;
+    margin-left: 320px;
+    left: -140px;
+    color:dimgray;
+}
+.icon-design
+{
+   background-color:#f1f1f1;
+    height:500px;
+    width:400px;
+    transition: transform .2s; 
+    overflow-x:hidden;
+}
+.icon-design:hover{
+    transform: scale(1.1);
+}
+.h-divider
+{
+    border-bottom:2px solid lightgray;
+    width:1410px;
+        position: relative;
+    left: 155px;
+    top: 34px;
+}
+.header-des
+{
+        position: relative;
+    top: 45px;
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: sans-serif;
+    left: 505px;
+}
+.div-icon
+{
+        position: relative;
+    left: 70px;
+}
+.dot
+{
+   
+ height: 150px;
+    width: 150px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    top: 55px;
+    left: 95px;
+}
+.icon1
+{
+   position: relative;
+    left: 125px;
+    height: 100px;
+    width: 100px;
+    top: -290px;
+}
+.icon2
+{
+           position: relative;
+    height: 100px;
+    width: 100px;
+    top: -297px;
+    left: 126px;
+}
+.icon3
+{
+           position: relative;
+    height: 100px;
+    width: 100px;
+    top: -300px;
+    left: 120px;
+}
+.i1-txt
+{
+             position: relative;
+    top: 95px;
+    font-size: 18px;
+    font-family: sans-serif;
+    left: 0px;
+    text-align: center;
+    margin-right: 0px;
+}
+.i1-header {
+    position: relative;
+    top: 80px;
+    font-size: 27px;
+    font-weight: 700;
+    text-align: center;
+    left: -37px;
+    margin-left: 72px;
+}
+.i2-header
+{
+            position: relative;
+    top: 83px;
+    font-size: 28px;
+    left: 35px;
+    font-weight: 700;
+    text-align: center;
+    margin-left: -59px;
+    
+}
+.i2-txt
+{
+        position: relative;
+    font-size: 19px;
+    text-align: center;
+    top: 94px;
+}
+.i3-txt
+{
+        position: relative;
+    font-size: 19px;
+    text-align: center;
+    top: 99px;
+    margin-left: 20px;
+}
+.i3-header
+{
+        position: relative;
+    font-size: 28px;
+    font-weight: 700;
+    top: 82px;
+    text-align: center;
+}

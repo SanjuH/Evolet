@@ -1,0 +1,680 @@
+
+<!DOCTYPE html>
+<html style="height:1600px">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/font-awesome.min.css" rel="stylesheet" />
+    <script src="scripts/jquery-3.3.1.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .h2-design
+        {
+                font-family: serif;
+                font-size: 25px;
+        }
+        .img11
+        {
+                margin-bottom: 70px;
+                position: relative;
+                height: 300px;
+                width: 450px;
+                left: 342px;
+                top: 30px;
+        }
+
+        body {
+            font-family: "Lato", sans-serif;
+        }
+
+
+        /* Style the tab */
+        .tab {
+              position: relative;
+                top: 115px;
+             background-color: lightgrey;
+             width: 230px;
+             left: 10px;
+        }
+        
+        table {
+            width: 50%;
+            height: 100px;
+            border-collapse: collapse;
+            background-color: none;
+        }
+
+        td {
+            height: 40px;
+            background-color: none;
+        }
+
+
+        th {
+            height: 60px;
+            background-color: gray;
+        }
+
+
+
+        /* Style the buttons inside the tab */
+        .tab button {
+            display: block;
+            background-color: inherit;
+            color:black;
+            padding: 22px 16px;
+            width: 100%;
+            border: none;
+            outline: none;
+            text-align: left;
+            cursor: pointer;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+
+
+
+
+            /* Change background color of buttons on hover */
+            .tab button:hover {
+                background-color: white !important;
+                color:black;
+            }
+
+            /* Create an active/current "tab button" class */
+            .tab button.active {
+                background-color: white !important;
+                color:black;
+            }
+
+        /* Style the tab content */
+        .tabcontent {
+            float: left;
+            padding: 0px 12px;
+            display: block;
+             position: relative;
+             top: -696px;
+             left: 280px
+            
+        }
+        .bdr
+        {
+            border:1px solid lightgrey;
+            border-radius:4px 4px;
+            background-color:white;
+            height:1550px;
+            width:1300px;
+        }
+
+        .tabcontent {
+                display:none;
+                
+        }
+
+        .show:focus + .hide {
+            display: inline;
+        }
+
+            .show:focus + .hide + .tabcontent {
+                display: block;
+            }
+
+        p {
+            color: black;
+            font-style: normal;
+        }
+        .nav-align
+{
+        height: 100px;
+        background-color:#d4d1d1;
+}
+.nav-design
+{
+    position: relative;
+    top: 35px;
+    /* margin-left: 129px; */
+    left: -70px;
+    font-size: 20px;
+    /* margin-right: 22px; */
+}
+.li :hover{
+    background-color:white !important;
+    color:black !important;
+    height:50px !important;
+    width:200px !important;
+    text-align:center;
+    border-radius:3px 3px;
+}
+.li :active
+{
+    background-color:white !important;
+    color:black !important;
+}
+.li
+{
+    margin-right:10px;
+}
+.footer
+{
+       background-color: black;
+    width: 100%;
+    height: 150px;
+    color:gray;
+
+}
+
+.icons {
+    display: inline;
+    font-size: 38px;
+    left: 635px;
+    position: relative;
+    top: 20px;
+    
+}
+.p-align
+{
+        position: relative;
+    font-size: 20px;
+    top: 15px;
+    left: 750px;
+    color:gray !important;
+}
+.icons-align
+{
+    margin-right:10px;
+}
+.p1-align
+{
+        position: relative;
+    top: 20px;
+    left: -32px;
+     color:gray !important;
+}
+.color
+{
+    color:gray !important;
+}
+.p1
+{
+    position: relative;
+    top: 155px;
+}
+.ul-design
+{
+        font-size: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    font-family: sans-serif;
+}
+
+        .h2 {
+            font-size: 30px;
+            font-family: serif;
+            position: relative;
+            /* text-align: center; */
+            left: -80px;
+        }
+
+        h1 {
+            
+                height: 50px;
+             position: relative;
+            top: 110px;
+            font-family: serif;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid nav-align">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="http://www.evolettechnologies.com">
+                        <img src="images/logo41.png" />
+                    </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse nav-design" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="li"><a href="Template.html">HOME <span class="sr-only">(current)</span></a></li>&nbsp;&nbsp;
+                        <li class="li"><a href="Domain.html">DOMAIN <span class="sr-only">(current)</span></a></li>
+                        <li class="li"><a href="Admin.php">ADMIN <span class="sr-only">(current)</span></a></li>
+                        <li class="li"><a href="employee.php">EMPLOYEE <span class="sr-only">(current)</span></a></li>
+                        <li class="li"><a href="About.html">ABOUT US <span class="sr-only">(current)</span></a></li>
+                        <li class="li"><a href="contactus.html">CONTACT US <span class="sr-only">(current)</span></a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+    </div>
+
+    <h1 align="center">DOMAINS</h1>
+
+    <div class="tab">
+
+
+        <button class="tablinks" onclick="openCity(event, 'web')" id="defaultopen">WEB DEVELOPEMNT</button>
+        <button class="tablinks" onclick="openCity(event, 'android')">ANDROID</button>
+        <button class="tablinks" onclick="openCity(event, 'python')">PYTHON</button>
+        <button class="tablinks" onclick="openCity(event, 'java')">JAVA</button>
+        <button class="tablinks" onclick="openCity(event, 'st')">SOFTWARE TESTING</button>
+        <button class="tablinks" onclick="openCity(event, 'ml')">MACHINE LEARNING</button>
+        <button class="tablinks" onclick="openCity(event, 'iot')">IOT</button>
+        <button class="tablinks" onclick="openCity(event, 'dot')">.NET</button>
+        <button class="tablinks" onclick="openCity(event, 'ios')">IOS APPS</button>
+
+
+        <button class="tablinks" onclick="openCity(event, 'erp')">ERP SOFTWARE</button>
+        <button class="tablinks" onclick="openCity(event, 'dm')">DIGITAL MARKETING</button>
+        <button class="tablinks" onclick="openCity(event,'wp')">WORDPRESS</button>
+
+
+    </div>
+
+
+
+    <div id="web" class="tabcontent bdr">
+        <h2 align="center" class="h2"> WEB</h2>
+        <img src="images/webdevelop.jpg" class="img11"/>
+    <div>
+        <p>
+            <h4 class="h2-design">WHAT IS WEB DEVELOPMENT ?</h4>
+            <ul class="ul-design">
+                
+                    Front-end development refers to constructing what a user sees when they load a web application the content, design and how you interact with it.
+                    <br>this is done with three codes HTML, CSS and JavaScript.<br>
+                    <br>
+                <li>
+                    HTML, short for Hyper Text Markup Language, is a special code for marking up text in order to turn it into a web page.Every web page on the net is written in HTML, and it will form the backbone of any web application.<br>
+                    <br>
+                <li>
+                    CSS, short for Cascading Style Sheets, is a code for setting style rules for the appearance of web pages. CSS handles the cosmetic side of the web.
+                    <br><br>
+                <li>
+                    Finally, JavaScript is a scripting language that is widely used to add functionality and interactivity to web pages.<br>
+                    <br>
+                <li>
+                    Back-end development controls what goes on behind the scenes of a web application.
+                    <br>A back-end often uses a database to generate the front-end.<br><br>
+            </ul>
+        <p class="ul-design"> Back-end scripts are written in many different coding languages and frameworks, such as :</p> 
+            <ul type="square" class="ul-design">
+                <li> PHP<br>
+                <li> Ruby on Rails<br>
+                <li>ASP.NET<br>
+                <li> Perl<br>
+                <li>Java<br>
+                <li> Node.js<br>
+                <li> Python<br>
+            </ul>
+           
+          
+        </div>
+
+    </div>
+
+    <div id="android" class="tabcontent bdr" style="display: block;height: 1670px;">
+        <h2 align="center" class="h2" style="position: relative;left: -80px;">ANDROID</h2>
+        <img src="images/android.png" class="img11"/>
+        <div>
+            <p>
+                <h4 class="h2-design">WHAT IS ANDROID?</h4>
+                <ul class="ul-design">
+                    <li>
+                        Android is an open source and Linux-based Operating System for mobile devices such as smartphones and tablet computers. <br>
+                        Android was developed by the Open Handset Alliance, led by Google, and other companies.<br><br>
+                    <li>
+                        Android offers a unified approach to application development for mobile devices which means developers need only develop for Android, and their applications should be able to run on different devices powered by Android.
+                        <br><br>
+                    <li>
+                        The first beta version of the Android Software Development Kit (SDK) was released by Google in 2007 where as the first commercial version, Android 1.0, was released in September 2008.
+                        <br><br>
+                </ul>
+                <h4 class="ul-design">Features of Android</h4>
+                Android is a powerful operating system competing with Apple 4GS and supports great features.
+                <ol class="ul-design">
+                    <li>Beautiful UI</li>
+                    <ul type="disc">
+                        <li>Android OS basic screen provides a beautiful user interface.
+                        <li>Android OS basic screen provides a intuitive user interface.
+
+                    </ul>
+
+                    <li class="ul-design">Connectivity</li>
+                    <ul type="disc" class="ul-design">
+                        <li> GSM/EDGE
+                        <li>IDEN
+                        <li>LTE
+                        <li>NFC
+                        <li> WiMAX
+
+                    </ul>
+
+
+                    <li class="ul-design">Media support</li>
+                    <ul type="disc">
+                        <li>H.263
+                        <li>H.264
+                        <li>MPEG-4 SP
+                        <li>AMR
+
+                    </ul>
+
+
+                    <li class="ul-design">Messaging</li>
+                    <ul type="disc">
+                        <li>SMS
+                        <li>  MMS
+
+                    </ul>
+                </ol>
+               
+
+            </p>
+        </div>
+        </div>
+
+    <div id="python" class="tabcontent bdr" style="display: block;height: 1170px;">
+        <h2 align="center" class="h2" style="position: relative;left: -80px;">PYTHON</h2>
+        <img src="images/python.png"  class="img11"/>
+        <div>
+            <p>
+                <h4 class="h2-design">WHAT IS PYTHON?</h4>
+                <ul class="ul-design">
+                    <li>
+                        Python is a high-level, interpreted, interactive and object-oriented scripting language. Python is designed to be highly readable. <br>
+                        <br>
+                    <li>
+                        It uses English keywords frequently where as other languages use punctuation, and it has fewer syntactical constructions than other languages.
+
+                        <br> <br>
+                    <li>
+                        Python is Interpreted - Python is processed at runtime by the interpreter. You do not need to compile your program before executing it.
+                        <br><br>
+                    <li>
+                        This is similar to PERL and PHP.
+
+                        <br><br>
+                    <li>
+                        Python is Interactive - You can actually sit at a Python prompt and interact with the interpreter directly to write your programs.
+
+
+                        <br><br>
+                    <li>
+                        Python is Object-Oriented - Python supports Object-Oriented style or technique of programming that encapsulates code within objects.
+
+                        <br><br>
+                    <li> Python is a Beginner's Language - Python is a great language for the beginner-level programmers and supports the development of a wide range of applications from simple text processing to WWW browsers to games.
+                </ul>
+            </p>
+           
+        </div>
+
+        </div>
+
+    <div id="java" class="tabcontent bdr" style="display: block;height: 1270px;">
+        <h2 align="center" class="h2" style="position: relative;left: -88px;">JAVA</h2>
+        <img src="images/java.png"  class="img11"/>
+        <div>
+            <p>
+                <h4 class="h2-design">WHAT IS JAVA?</h4>
+                <ul class="ul-design">
+                    <li>
+
+                        Java is an object-oriented programming language developed by <strong>Sun Microsystems</strong>
+                        , and it was released in 1995.
+                        <br><br>
+                    <li>
+                        James Gosling initially developed Java in Sun Microsystems (which was later merged with Oracle Corporation).
+                        <br><br>
+                    <li>
+                        Java is a set of features of C and C++. It has obtained its format from C, and OOP features from C++.
+                        <br><br>
+                    <li>
+                        Java programs are platform independent which means they can be run on any operating system with any processor as long as the Java interpreter is available on that system.<br>
+                        <br>
+                    <li>
+                        Java code that runs on one platform does not need to be recompiled to run on another platform; it's called write once, run anywhere(WORA).<br>
+                        <br>
+                    <li>
+                        Java Virtual Machine (JVM) executes Java code, but it has been written in platform-specific languages such as C/C++/ASM, etc. JVM is not written in Java and hence cannot be platform independent, and Java interpreter is a part of JVM.<br>
+                        <br><br>
+                </ul>
+            </p>
+           
+          
+            </div>
+
+            </div>
+
+    <div id="st" class="tabcontent bdr" style="display: block;height: 1270px;">
+        <h2 align="center" class="h2" style="position: relative;left: -83px;">SOFTWARE TESTING</h2>
+        <img src="images/software tesying.png"  class="img11"/>
+        <div>
+            <p>
+                <h4 class="h2-design">WHAT IS SOFTWARE TESTING?</h4>
+                <ul class="ul-design">
+                    <li>
+                        <strong>Software testing </strong>is an investigation conducted to provide stakeholders with information about the quality of the product or service under test
+                        <br><br>
+                    <li>
+                        Software testing can also be stated as the process of validating and verifying that a software program/application/product:
+                        <br>
+                        <ol>
+                            <li>meets the business and technical requirements that guided its design and development;
+                            <li> works as expected; and
+                            <li>can be implemented with the same characteristics.
+
+
+                        </ol>
+                        <br>
+                    <li>
+                        Software testing, depending on the testing method employed,can be implemented at any time in the development process.
+                        <br><br>
+                    <li>
+                        However, most of the test effort occurs after the requirements have been defined and the coding process has been completed. As such, the methodology of the test is governed by the software development methodology adopted
+                        <br><br>
+                    <li>
+                        <strong> Evolet Technologies </strong>is a Software company.
+                        <br> <br>
+                    <li>We help our clients, worldwide, to plan their test investments and manage critical testing processes to reduce the total cost of producing quality software.
+
+                </ul>
+            </p>
+            
+           
+
+            </div>
+            </div>
+    <div id="ml" class="tabcontent bdr" style="display: block;height: 1270px;">
+        <h2 align="center" class="h2" style="position: relative;left: -91px;">MACHINE LEARNING</h2>
+        <img src="images/machine.jpg"  class="img11"/>
+        <div>
+            <p>
+                <h4 class="h2-design">WHAT IS MACHINE LEARNING?</h4>
+            <P class="ul-design">Machine Learning is the science of getting computers to learn and act like humans do, and improve their learning over time in autonomous fashion, by feeding them data and information in the form of observations and real-world interactions.”</P>
+            <ul class="ul-design">
+                <li>
+                    <strong>Machine learning</strong> is a very hot topic for many key reasons, and because it provides the ability to automatically obtain deep insights
+                    <br><br>
+                <li>
+                    Recognize unknown patterns, and create high performing predictive models from data, all without requiring explicit programming instructions.
+                    <br><br>
+                <li>
+                    There are many different types of machine learning algorithms, with hundreds published each day, and they are typically grouped by either learning style (i.e. supervised learning, unsupervised learning, semi-supervised learning)
+                    <br><br>
+                <li>
+                    By similarity in form or function (i.e. classification, regression, decision tree, clustering, deep learning, etc.). Regardless of learning style or function, all combinations of machine learning algorithms consist of the following:
+                    <br><br>
+                <li>Evolet Technologies is continuously evolving and pushing the bar for our customers for developing an software testing as it requires a lot of creativity and innovativeness to make it stand out among the competitors
+            </ul>
+
+            </p>
+           
+
+
+            
+            </div>
+
+            </div>
+    <div id="iot" class="tabcontent bdr" style="display: block;height: 1170px;">
+        <h2 align="center" class="h2" style="position: relative;left: -90px;">IOT</h2>
+        <img src="images/iot.png"  class="img11"/>
+        <div>
+            <p class="ul-design">
+
+                The <strong>Internet of Things </strong>(IoT) is the network of physical devices, vehicles, home appliances, and other items embedded with electronics, software, sensors, actuators, and connectivity which enables these things to connect and exchange data, creating opportunities for more direct integration of the physical world into computer-based systems, resulting in efficiency improvements, economic benefits, and reduced human exertions.
+
+                <ul class="ul-design"><li><h5>Consumer Appliication</h5></ul>
+            <p class="ul-design">
+                A growing portion of IoT devices are created for consumer use, including connected vehicles, home automation/smart home, wearable technology, connected health, and appliances with remote monitoring capabilities.
+            </p>
+            <ul class="ul-design"><li><h5 class="ul-design">Smart home</h5></ul>
+            <p class="ul-design">
+                IoT devices are a part of the larger concept of home automation, which can include lighting, heating and air conditioning, media and security systems. Long term benefits could include energy savings by automatically ensuring lights and electronics are turned off.
+            </p>
+            </p>
+           
+          
+            </div>
+
+
+
+            </div>
+    <div id="dot" class="tabcontent bdr" style="display: block;height: 1000px;">
+        <h2 align="center" class="h2" style="position: relative;left: -94px;">.NET</h2>
+        <div>
+            <img src="images/net.png"  class="img11"/>
+            <p class="ul-design"> 
+
+                .NET provides a simple object-oriented model to access most of the Windows application programming interfaces (APIs). It also provides mechanisms by which you can use the existing native code. In addition, it significantly extends the development platform by providing tools and technologies to develop Internet-based distributed applications.
+            <p class="ul-design">
+                The .NET platform is an integral component of the Microsoft Windows operating system for building and running next generation software applications and Web services. The .NET development framework provides a new and simplified model for programming and deploying applications on the Windows platform. It provides such advantages as multiplatform applications, automatic resource management, and simplification of application deployment. As security is an essential part of .NET, it provides security support, such as code authenticity check, resources access authorizations, declarative and imperative security, and cryptographic security methods for embedding into the users application.
+            </p>
+            </p>
+           
+           
+            </div>
+            </div>
+
+    <div id="ios" class="tabcontent bdr" style="display: block;height: 900px;">
+        <h2 align="center" class="h2" style="position: relative;left: -85px;">IOS APPS</h2>
+        <div>
+            <img src="images/io.png"  class="img11" />
+            <p class="ul-design">
+                The IOS applications has redefined the concept of mobile app development paradigm all around the world and Evolet Technologies has provided innovative and world class iPhone applications.
+            <p class="ul-design">
+                <strong>Evolet Technologies</strong> is one of the top iOS (iPhone, iPad) Apps Development Company, backed by brilliant developers, who have collaborated innovative ideas in workflow of iOS app development With the help of flexible workflow and excellent knowledge base, we provide comprehensive mobile applications that can automate every kind of job related to business and personnel lifestyle.
+
+            </p>
+            </p>
+          
+          
+
+            </div>
+            </div>
+
+    <div id="erp" class="tabcontent bdr" style="display: block;height: 1170px;">
+        <h2 align="center" class="h2" style="position: relative;left: -91px;">ERP SOFTWARE</h2>
+        <img src="images/erp.jpg"  class="img11"/>
+        <div>
+            <p class="ul-design">
+                Enterprise Resource Planning, refers to creating a more efficient, leaner, better-automated and integrated business through sophisticated technology solutions.ERP software then, is a business management technology solution that businesses and manufacturers use to collect, store, manage, and communicate data.
+            <p class="ul-design">ERP is a Complete Package with various modules involving various Business Processes of a Company right from Enquiry, Quotation, Sales, Purchase, Inventory, Production and Accounts. </p>
+            <h4 class="ul-design">Benifits of this service</h4>
+            <ul class="ul-design">
+                <li>ERP Includes Master Data, Purchase, Sales, Inventory, Production, Financial Accounting (FA), Detailed MIS (Management Information Services) Reports etc. Modules and depending on the nature of your business, modules can be customized.
+                <li>  Web Enabled Application which can run on a Local Server as well as on Internet/Intranet using Browser Environment.
+                <li> Improve compliance with strong traceability
+                <li>Reduces IT costs and delivers automated ERP upgrades
+                <li>  Elevates productivity with anywhere access
+            </ul>
+            </p>
+           </div>
+
+            </div>
+    <div id="dm" class="tabcontent bdr" style="display: block;height: 1170px;">
+        <h2 align="center" class="h2" style="position: relative;left: -92px;">DIGITAL MARKETING</h2>
+        <img src="images/spaceship.jpg"  class="img11"/>
+        <div>
+            <p class="ul-design">
+                Digital Marketing can be understood as a well-targeted, conversion-oriented, quantifiable, and interactive marketing of products or services by utilizing digital innovation to achieve the customers, and transform them into clients in a sustainable fashion. The whole concept and functionalities of Digital Marketing are more competent, effective, result-oriented and measurable, which make it very different from traditional marketing.
+
+                <ul class="ul-design">
+                    <li>
+                        Communication is bidirectional in Digital Marketing as businesses can communicate with customers and customers can ask queries or make suggestions to businesses as well.
+                        <br>  <br>
+                    <li>
+                        Medium of communication is more powerful and involves social media websites, chats, apps and Email.
+
+                        <br> <br>
+                    <li>
+                        Digital marketing campaigns can be developed quite rapidly and with digital tools, channelizing Digital Marketing campaigns is easier.
+                        <br>  <br>
+                    <li>
+                        It is very effective for reaching global audiences.
+                        <br> <br>
+                    <li> Digital Marketing lets you measure the effectiveness of a digital marketing campaign through analytics.
+                </ul>
+            </p>
+           
+            
+            </div>
+            </div>
+    <div id="wp" class="tabcontent bdr" style="display: block;height: 1270px;">
+        <h2 align="center" class="h2" style="position: relative;left: -85px;">WORDPRESS</h2>
+        <img src="images/wordpress.png"  class="img11"/>
+        <div>
+            <p>
+                <h4 class="h2-design">WHAT IS WORDPRESS?</h4>
+            <p class="ul-design"> <strong>WordPres</strong>is a free and open-source content management system (CMS) based on PHP and MySQL.[4] Features include a plugin architecture and a template system. It is most associated with blogging, but supports other types of web content including more traditional mailing lists and forums, media galleries, and online stores.</p>
+
+            <ul class="ul-design">
+                <li>
+                    <strong>Wordpress </strong>an open source package that gives a simple, neat and edgy touch to any website.
+                    <br> <br>
+                <li>
+                    It is popular for its responsive designs, customization with plugins and themes, flexibility, and because it has the largest share in the CMS market.
+                    <br> <br>
+                <li>
+                    <strong> Evolet technologies </strong>development team masters in Wordpress website development. Our team understands the value of a website which is responsive, user-friendly and is a return investment for the client.
+                    <P>Did you know popular companies use the Wordpress platform? The Newyorker, Disney, Playstation, BBC America etc., all use this open source website platform. Wordpress is a platform that is effortless, easy to use, customizable and effective content management system and so a lot of business enterprises, clients and bloggers prefer Wordpress for an impactful, potential, and robust website. With Wordpress, one can create a responsive, functional and user- friendly website. Wordpress powered websites are secure, standard compliant, SEO friendly, host multiple media and reduce your total costs. Wordpress, unlike other platforms, lets you to effectively deal and manage your website content with an easy content management system. With the proper guidance, assistance and support your website can make the best use of this familiar system.</P>
+            </ul>
+
+            </p>
+            
+           
+            </div>
+                </div>
+
+</body>
+</html>
+<script>
+                            function openCity(evt, cityName) {
+                                var i, tabcontent, tablinks;
+                                tabcontent = document.getElementsByClassName("tabcontent");
+                                for (i = 0; i < tabcontent.length; i++) {
+                                    tabcontent[i].style.display = "none";
+                                }
+                                tablinks = document.getElementsByClassName("tablinks");
+                                for (i = 0; i < tablinks.length; i++) {
+                                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                                }
+                                document.getElementById(cityName).style.display = "block";
+                                evt.currentTarget.className += " active";
+                            }
+
+                            // Get the element with id="defaultOpen" and click on it
+                            document.getElementById("defaulopen").click();
+</script>
