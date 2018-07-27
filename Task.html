@@ -1,0 +1,327 @@
+﻿<html>
+<head>
+
+    <link href="admin_log.css" rel="stylesheet" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/font-awesome.min.css" rel="stylesheet" />
+    <script src="scripts/jquery-3.3.1.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <style>
+        ﻿body{
+        background-color: rgba(0, 0, 0, 0.37);
+    }
+    body img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+            opacity: 0.8;
+    }
+    .emp{
+        background-color: rgba(150, 143, 143, 0.37);
+        width: 350px;
+        height: 150px;
+        color: white;
+        border-radius:10px; 
+        top: 180px;
+        position: relative;
+        left: 300px;
+    }
+    .emp h2{
+        font-size: 26px; 
+        text-align: center;
+        padding: 10px;
+    }
+    #btn{
+        border-radius: 10px;
+        width: 150px;
+        height: 50px;
+        padding: 5px;
+        background-color: white;
+        color: black;
+        position: relative;
+        left: 100px;
+    }
+    #btn:hover{
+        background-color: rgba(0, 0, 0, 0.31);
+        color: white;
+        width: 170px;
+        height: 60px;
+        font-size: 20px;
+        
+    }
+    .int{
+        background-color: rgba(150, 143, 143, 0.37);
+        width: 350px;
+        height: 150px;
+        color: white;
+        border-radius:10px; 
+        top:10px;
+        left: 673px;
+        position: relative;
+    }
+    .int h2{
+        font-size: 26px; 
+        text-align: center;
+        padding: 10px;
+    }
+    .att{
+        background-color: rgba(150, 143, 143, 0.37);
+        width: 350px;
+        height: 150px;
+        color: white;
+        border-radius:10px; 
+        top:10px;
+        left: 673px;
+        position: relative;
+    }
+    .att h2{
+        font-size: 26px; 
+        text-align: center;
+        padding: 10px;
+    }
+    .pro{
+        background-color: rgba(150, 143, 143, 0.37);
+        width: 350px;
+        height: 150px;
+        color: white;
+        border-radius:10px; 
+        top: -160px;
+        left: 300px;
+        position: relative;
+    }
+    .pro h2{
+        font-size: 26px; 
+        text-align: center;
+        padding: 10px;
+    }
+    .nav-align
+    {
+            height: 100px;
+            background-color:#d4d1d1;
+    }
+    .nav-design
+    {
+        position: relative;
+        top: 35px;
+        /* margin-left: 129px; */
+        left: -70px;
+        font-size: 20px;
+        /* margin-right: 22px; */
+    }
+    .li :hover{
+        background-color:white !important;
+        color:black !important;
+        height:50px !important;
+        width:200px !important;
+        text-align:center;
+        border-radius:3px 3px;
+    }
+    .li :active
+    {
+        background-color:white !important;
+        color:black !important;
+    }
+    .li
+    {
+        margin-right:10px;
+    }
+    .footer
+    {
+           background-color: black;
+        width: 100%;
+        height: 150px;
+        color:gray;
+    
+    }
+    
+    .icons {
+        display: inline;
+        font-size: 38px;
+        left: 635px;
+        position: relative;
+        top: 20px;
+        
+    }
+    .p-align
+    {
+            position: relative;
+        font-size: 20px;
+        top: 15px;
+        left: 750px;
+    }
+    .icons-align
+    {
+        margin-right:10px;
+    }
+    .p1-align
+    {
+            position: relative;
+        top: 20px;
+        left: -32px;
+    }
+    .color
+    {
+        color:gray !important;
+    }
+    .div
+    {
+        background-color:white;
+        opacity:0.8;
+        border:1px solid lightgray;
+        height:400px;
+        width:800px;
+            position: relative;
+        top: 110px;
+        left:85px;
+        animation-duration: 1s;
+                    animation-name: slidein;
+    }
+    .header
+    {
+            color: black;
+        font-family: serif;
+        font-weight: bolder;
+        margin-left: 15px;
+        text-align: center;
+    }
+    .frm
+    {
+            position: relative;
+        left: 215px;
+        font-size: 20px;
+        font-weight: bolder;
+        font-family: sans-serif;
+        color: black;
+    }
+    .btn11
+    {
+        background-color:black;
+        color:white;
+        position:relative;
+        left:350px;
+        font-size:18px;
+    
+    }
+    @keyframes slidein {
+                    from {
+                        margin-left: 100%;
+                        width: 300%;
+                    }
+    
+                    to {
+                        margin-left: 0%;
+                        width: 100%;
+                    }
+                }
+    
+    </style>
+</head>
+<body style="overflow-x:hidden">
+    <div>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid nav-align">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="http://www.evolettechnologies.com">
+                        <img src="images/logo41.png" style="height:70px;width:300px" />
+                    </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse nav-design" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="li"><a href="Template.html">HOME <span class="sr-only">(current)</span></a></li>&nbsp;&nbsp;
+                        <li class="li"><a href="#">DOMAIN <span class="sr-only">(current)</span></a></li>
+                        <li class="li"><a href="Admin.php">ADMIN <span class="sr-only">(current)</span></a></li>
+                        <li class="li"><a href="employee.php">EMPLOYEE <span class="sr-only">(current)</span></a></li>
+                        <li class="li"><a href="About.html">ABOUT US <span class="sr-only">(current)</span></a></li>
+                        <li class="li"><a href="contactus.html">CONTACT US <span class="sr-only">(current)</span></a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+    </div>
+    <div>
+
+        <img src="images/agenda-appointment-business-1020323.jpg" style="opacity:0.6"/>
+        <div style="position:relative;left:100px;font-family:sans-serif;top:70px">
+            <div class="container">
+                <br>
+                <br>
+                <br>
+                <div class="div" style="height:550px !important;top:40px !important">
+                    <h2 class="header">Assigned Tasks</h2>
+                    <br />
+                    <form action=" itask.php" method="post" name="myForm" onsubmit="" class="form-block">
+                        <div class="frm">
+                            <div class="form-group">
+                                <label for="email" class="pull-left" style="position: relative;top: 60px;left: -75px;">Task:</label>
+                                <input type="text"  placeholder="Enter Task" name="task" style="width: 50%;height: 50px;position: relative;top: 50px;left: 0px;">
+                            </div>
+                            <div class="frm">
+                                <!-- <div class="form-group">
+                                <label for="email" class="pull-left" style="position: relative;top: 60px;left: -75px;">Task:</label> -->
+                                    <input type="hidden"  placeholder="Enter Task" name="id" style="width: 50%;height: 50px;position: relative;top: 50px;left: 0px;">
+                                </div>
+                            <div class="form-group">
+                                <label for="time"  class="pull-left" style="position: relative;top: 75px;left: -75px;">Time Alloted:</label>
+                                <div class="btn-group">
+                                    
+                                       
+                                    </button>
+                                   
+                                    <ul >
+                                        <select name="time"  style="height: 45px;width: 100px;position: relative;top: 70px;left: -115px;">
+                                            <option value="1">1 hour</option>
+                                            <option value="2">2 hours</option>
+                                            <option value="3">3 hours</option>
+                                            <option value="4">4 hours</option>
+                                            <option value="5">5 hours</option>
+                                            <option value="24">1 day</option>
+                                        </select>
+                                        
+                                    </ul>
+                                    
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="date"class="pull-left"style="position: relative;left: -70px;top: 75px;">Date:</label>
+                                <input type="date"   placeholder="Enter date" name="date" style="position: relative;top: 75px">
+                            </div>
+                            
+                        </div>
+                        <button type="submit" class="btn btn-lg btn11" style="position: relative;top: 110px;left: 365px;">SUBMIT</button>
+                    </form>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+    <br />
+    <br />
+    <div class="footer" style="position: relative;top: 150px;">
+        <div>
+            <p class="p-align">Follow Us On</p>
+            <div>
+                <ul class="icons">
+                    <a href="https://twitter.com/evoletblr" class="color"><i class="fa fa-twitter-square icons-align"></i></a>
+                    <a href="https://www.facebook.com/Evolet-Technologies-1988856154659946/" class="color"><i class="fa fa-facebook-square icons-align"></i></a>
+                    <a href="#" class="color"><i class="fa fa-skype icons-align"></i></a>
+                    <a href="https://www.youtube.com/channel/UCUD_joTvV9Q422yToKB7lCA" class="color"><i class="fa fa-youtube-square icons-align"></i></a>
+                    <a href="https://linkedin.com/company/evolettechnologies" class="color"><i class="fa fa-linkedin-square icons-align"></i></a>
+                    <a href="https://plus.google.com/u/1/collection/g1v1WE" class="color"><i class="fa fa-google-plus-square icons-align"></i></a>
+
+                </ul>
+            </div>
+            <p class="text-center cpy-text p1-align">&copy; 2017 - Privacy Policy</p>
+        </div>
+    </div>
+
+</body>
+</html>

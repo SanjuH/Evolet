@@ -1,0 +1,517 @@
+﻿<html>
+<head>
+    <title>
+        about us
+    </title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/font-awesome.min.css" rel="stylesheet" />
+    <script src="scripts/jquery-3.3.1.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <style>
+            body, html {
+                height: 100%;
+                margin: 0;
+            }
+
+        body {
+            
+            background-image: url('images/b2.jpg');
+            background-position: 0em;
+            background-attachment: fixed;
+            background-size: contain;
+        }
+
+            #header {
+                background-color: black;
+                /*Opacity start*/
+                -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+                filter: alpha(opacity=80);
+                -moz-opacity: 0.80;
+                -khtml-opacity: 0.8;
+                opacity: 0.8;
+                /*Opacity end*/
+                color: white;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 70px;
+                padding: 0;
+                margin: 0;
+            }
+
+                #header #header-content {
+                    margin: 10px;
+                }
+
+            #p {
+                width: 100%;
+                height: 50%;
+                text-align: center;
+            }
+
+            #f {
+                position: absolute;
+                text-align: justify;
+                left: 880px;
+                color: black;
+                right: 100px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                top: 850px;
+                line-height: 30px;
+            }
+
+            #w {
+                position: absolute;
+                top: 150px;
+                text-align: justify;
+                left: 500px;
+                color: black;
+                /*border: 10px transparent wheat;*/
+                font-size: 20px;
+                right: 100px;
+                white-space: 10px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                animation-duration: 1s;
+                animation-name: slidein;
+            }
+
+            @keyframes slidein {
+                from {
+                    margin-left: 100%;
+                    width: 300%;
+                }
+
+                to {
+                    margin-left: 0%;
+                    width: 100%;
+                }
+            }
+
+            #x {
+                position: absolute;
+                top: 500px;
+                text-align: justify;
+                right: 500px;
+                color: black;
+                /*border: 10px transparent wheat;*/
+                font-size: 20px;
+                left: 100px;
+                white-space: 10px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                animation-delay: 1s;
+                animation-name: slidein;
+            }
+
+            @keyframes slidein {
+                from {
+                    margin-left: 0%;
+                    width: 300%;
+                }
+
+                to {
+                    margin-left: 100%;
+                    width: 100%;
+                }
+            }
+
+            #a {
+                position: absolute;
+                top: 110px;
+                left: 5%;
+                animation-duration: 1s;
+                animation-name: slidein;
+            }
+
+            @keyframes slidein {
+                from {
+                    margin-left: 100%;
+                    width: 300%;
+                }
+
+                to {
+                    margin-left: 0%;
+                    width: 100%;
+                }
+            }
+
+            #i1 {
+                position: absolute;
+                top: 510px;
+                right: 5%;
+            }
+
+            #b {
+                position: absolute;
+                top: 110px;
+                right: 0%;
+                text-justify: auto;
+            }
+
+            #q {
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                color: black;
+                overflow: hidden;
+                /*display: inline;*/
+            }
+
+            #t {
+                /* right: 100px;
+        left:0px;*/
+                text-align: center;
+            }
+
+            .item-1,
+            .item-2,
+            .item-3 {
+                position: absolute;
+                display: block;
+                top: 850px;
+                width: 100%;
+                font-size: 20px;
+                text-align: justify;
+                left: 10px;
+                white-space: 10px;
+                right: 7000px;
+                /*animation-duration: 20s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;*/
+            }
+
+            #r {
+                position: absolute;
+                top: 1500px;
+                align-content: center;
+            }
+
+
+            #u {
+                position: absolute;
+                left: 10px;
+            }
+
+            .l {
+                width: 300px;
+                height: 100px;
+                padding: 15px;
+                background-color: white;
+                box-shadow: 10px 10px;
+            }
+
+            #a1 {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            #a2 {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            #o {
+                padding-left: 10%;
+                padding-right: 10%;
+            }
+            .nav-align
+{
+        height: 100px;
+        background-color:#d4d1d1;
+}
+.nav-design
+{
+    position: relative;
+    top: 35px;
+    /* margin-left: 129px; */
+    left: -70px;
+    font-size: 20px;
+    /* margin-right: 22px; */
+}
+.li :hover{
+    background-color:white !important;
+    color:black !important;
+    height:50px !important;
+    width:200px !important;
+    text-align:center;
+    border-radius:3px 3px;
+}
+.li :active
+{
+    background-color:white !important;
+    color:black !important;
+}
+.li
+{
+    margin-right:10px;
+}
+.footer
+{
+       background-color: black;
+    width: 100%;
+    height: 150px;
+    color:gray;
+
+}
+
+.icons {
+    display: inline;
+    font-size: 38px;
+    left: 635px;
+    position: relative;
+    top: 20px;
+    
+}
+.p-align
+{
+        position: relative;
+    font-size: 20px;
+    top: 15px;
+    left: 750px;
+}
+.h2-align
+{
+        position: relative;
+    top: 110px;
+    font-family: -webkit-pictograph;
+    font-weight: 600;
+    text-align: center;
+}
+.icons-align
+{
+    margin-right:10px;
+}
+.p1-align
+{
+        position: relative;
+    top: 20px;
+    left: -32px;
+}
+.color
+{
+    color:gray !important;
+}
+.about-align
+{
+        position: relative;
+    top: 2700px;
+}
+    </style>
+</head>
+<body>
+    <div >
+        <nav class="navbar navbar-default navbar-fixed-top" >
+            <div class="container-fluid nav-align">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="http://www.evolettechnologies.com">
+                        <img src="images/logo41.png" />
+                    </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse nav-design" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="li"><a href="Template.html">HOME <span class="sr-only">(current)</span></a></li>&nbsp;&nbsp;
+                        <li class="li"><a href="Domain.html">DOMAIN <span class="sr-only">(current)</span></a></li>
+                        <li class="li"><a href="Admin.php">ADMIN <span class="sr-only">(current)</span></a></li>
+                        <li class="li"><a href="employee.php">EMPLOYEE <span class="sr-only">(current)</span></a></li>
+                        <li class="li"><a href="About.html">ABOUT US <span class="sr-only">(current)</span></a></li>
+                        <li class="li"><a href="contactus.html">CONTACT US <span class="sr-only">(current)</span></a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+    </div>
+    <div>
+        <div>
+            <h2 class="h2-align">ABOUT US</h2>
+        </div>
+    </div>
+    <div style="position:relative;top:80px" >
+    <div id="a">
+        
+        <img src="images/i3.jpg"  alt="img" width="400px" height="300px"/>
+
+
+    </div>
+    <div id="w">
+        <p>
+            <b>Evolet Technologies</b> is a Software Development (global IT solutions) company started with set of people with 67 man years experience with business acumen in providing a user friendly feature and customized solutions for small, medium and large businesses.
+            We provide full-cycle services in the areas of customized software development, web designing, web development, SEO and software solutions and services.
+            Combining our solid business domain experience, technical expertise, profound knowledge of latest industry trends and quality-driven delivery model we offer progressive end-to-end web solutions.
+        </p>
+
+    </div>
+
+    <div id="i1">
+        
+        <img src="images/wrk.jpg" alt="img" width="400px" height="300px">/>
+    </div>
+
+    <div id="x">
+        <h2>What do we do?</h2>
+        <p>We are a global IT solutions provider offering various customized solutions for small, medium and large businesses. We provide end to end services in the areas of software development, web designing, web development, SEO – Search Engine Optimization and other Software training solutions and services. With our industry experience and technical expertise we offer quality driven delivery model that is progressive in nature. We take pride in our professional expertise and our ability to make the web and technology work for you, thus enhancing your productivity and take your business to new heights. We take full advantage of the web and make it work for you. Our strength lies with our superior knowledge of industry verticals, which help us deliver value to our customers through our quality solutions and services.</p>
+
+    </div>
+
+    <div id="q" class="item-1">
+        <br>
+        <br>
+        <div>
+            <h1 style="font-size:30px;text-align:center">
+                What is our
+                <span class="txt-rotate"
+                      data-period="2000"
+                      data-rotate='[ "strength?" ]'></span>
+            </h1>
+            
+            <img src="images/a2.jpg" alt="" width="60%" height="50%" style="position: relative;left: 310px;"/>
+
+            <br>
+
+
+            <p id="t">
+                Having its roots at Bangalore, We are successfully spreading our wings over South India.Now operating  styout of two branch offices, Evolet has been able to deliver its promises in time to its Clients.
+                This trust gives the impetus that drives the teams at Evolet.
+                Our team of talented and experienced professionals are capable to meet even the most difficult and complex requirement within short span of time.
+                We have all the necessary resources and expertise in place to help you design, develop, deploy, and maintain robust applications throughout the software development lifecycle.
+                The team at Evolet has developed and implemented various solutions which meets our client’s requirements and have delivered within time and are ready to work 24/7 using the full potential of the latest technologies.
+            </p></p>
+            </span>
+        </div>
+        <br><br>
+        <div>
+            <h2 style="font-size:35px;text-align:center">Our Promises</h2>
+            <br>
+            <img src="images/a3.jpg" style="padding-left:25px" alt="" width="50%" height="50%"/>
+           
+            <ul style="font-size:20px;" id="f">
+                <li>Innovative Ideas</li>
+                <li>Cutting Edge Technologies</li>
+                <li> Customer Centric Approach</li>
+                <li>Competitive Pricing</li>
+                <li>Superior knowledge of Industry Verticals</li>
+                <li> Expertise all along</li>
+            </ul>
+
+        </div>
+        <br>
+        <br>
+        <div>
+            <h2 style="color: black;
+                        text-shadow: 1px 1px 2px black, 0 0 25px gray, 0 0 5px white;font-size:35px;text-align:center">
+                Why Evolet Technologies?
+            </h2>
+            
+            <img id="a2" src="images/why.jpg"  alt="" width="40%" height="50%"/>
+            <p id="o">
+                Well trained and experienced teams that are always put through continuous training practices to effectively handle today’s IT demand.
+
+                We pay special attention to your specific needs with ease of use and utilize the latest technology to get the job done right the first time.
+
+                Very clear and timely communication at any given time.
+
+                We never forget that your goal is ours! Our every step in providing your services is towards achieving your business objective!
+
+                We respect your deadlines and go live dates and work towards meeting them well in advance by offering faster turn-around times.
+
+                Our methodologies have helped developers meet budgets, schedules and have satisfied all our client's with a user interface application.
+            </p>
+
+        </div>
+
+
+    </div>
+
+    </div>
+    </div>
+
+    </div>
+    </div>
+    <div class="footer about-align">
+        <div>
+            <p class="p-align">Follow Us On</p>
+            <div>
+                <ul class="icons">
+                    <a href="https://twitter.com/evoletblr" class="color"><i class="fa fa-twitter-square icons-align"></i></a>
+                    <a href="https://www.facebook.com/Evolet-Technologies-1988856154659946/" class="color"><i class="fa fa-facebook-square icons-align"></i></a>
+                    <a href="#" class="color"><i class="fa fa-skype icons-align"></i></a>
+                    <a href="https://www.youtube.com/channel/UCUD_joTvV9Q422yToKB7lCA" class="color"><i class="fa fa-youtube-square icons-align"></i></a>
+                    <a href="https://linkedin.com/company/evolettechnologies" class="color"><i class="fa fa-linkedin-square icons-align"></i></a>
+                    <a href="https://plus.google.com/u/1/collection/g1v1WE" class="color"><i class="fa fa-google-plus-square icons-align"></i></a>
+
+                </ul>
+            </div>
+            <p class="text-center cpy-text p1-align">&copy; 2017 - Privacy Policy</p>
+        </div>
+    </div>
+    <script>
+            var TxtRotate = function(el, toRotate, period) {
+  this.toRotate = toRotate;
+  this.el = el;
+  this.loopNum = 0;
+  this.period = parseInt(period, 10) || 2000;
+  this.txt = '';
+  this.tick();
+  this.isDeleting = false;
+};
+
+TxtRotate.prototype.tick = function() {
+  var i = this.loopNum % this.toRotate.length;
+  var fullTxt = this.toRotate[i];
+
+  if (this.isDeleting) {
+    this.txt = fullTxt.substring(0, this.txt.length - 1);
+  } else {
+    this.txt = fullTxt.substring(0, this.txt.length + 1);
+  }
+
+  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+  var that = this;
+  var delta = 300 - Math.random() * 100;
+
+  if (this.isDeleting) { delta /= 2; }
+
+  if (!this.isDeleting && this.txt === fullTxt) {
+    delta = this.period;
+    this.isDeleting = true;
+  } else if (this.isDeleting && this.txt === '') {
+    this.isDeleting = false;
+    this.loopNum++;
+    delta = 500;
+  }
+
+  setTimeout(function() {
+    that.tick();
+  }, delta);
+};
+
+window.onload = function() {
+  var elements = document.getElementsByClassName('txt-rotate');
+  for (var i=0; i<elements.length; i++) {
+    var toRotate = elements[i].getAttribute('data-rotate');
+    var period = elements[i].getAttribute('data-period');
+    if (toRotate) {
+      new TxtRotate(elements[i], JSON.parse(toRotate), period);
+    }
+  }
+  // INJECT CSS
+  var css = document.createElement("style");
+  css.type = "text/css";
+  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+  document.body.appendChild(css);
+};
+
+
+    </script>
+
+</body>
+</html>

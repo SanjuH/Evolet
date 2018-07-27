@@ -109,7 +109,109 @@
                     width: 100px;
                      height: 56px;
             }
-        </style>
+        </style>  <style>
+               form {
+                   top: 100px;
+               }
+               .nav-align {
+                   height: 100px;
+                   background-color: #d4d1d1;
+               }
+
+               .nav-design {
+                   position: relative;
+                   top: 35px;
+                   /* margin-left: 129px; */
+                   left: -70px;
+                   font-size: 20px;
+                   /* margin-right: 22px; */
+               }
+
+               .li :hover {
+                   background-color: white !important;
+                   color: black !important;
+                   height: 50px !important;
+                   width: 200px !important;
+                   text-align: center;
+                   border-radius: 3px 3px;
+               }
+
+               .li :active {
+                   background-color: white !important;
+                   color: black !important;
+               }
+
+               .li {
+                   margin-right: 10px;
+               }
+
+               .footer {
+                   background-color: black;
+                   width: 100%;
+                   height: 150px;
+                   color: gray;
+               }
+
+               .icons {
+                   display: inline;
+                   font-size: 38px;
+                   left: 635px;
+                   position: relative;
+                   top: 20px;
+               }
+
+               button:hover {
+                   color: white !important;
+                   background-color: black !important;
+               }
+
+               .p-align {
+                   position: relative;
+                   font-size: 20px;
+                   top: 15px;
+                   left: 750px;
+               }
+
+               .icons-align {
+                   margin-right: 10px;
+               }
+
+               .p1-align {
+                   position: relative;
+                   top: 20px;
+                   left: -32px;
+               }
+
+               .b1 {
+                   font-size: 25px;
+                   font-family: serif;
+               }
+
+               .color {
+                   color: gray !important;
+               }
+               .thead
+               {
+                   background-color:lightgray;
+               }
+
+               body
+               {
+
+                    background-image:url(images/background-cement-concrete-242236.jpg);
+
+
+               }
+               table {
+                   border-collapse: collapse !important;
+                  
+                }
+
+               table, th, td {
+                   border: 1px solid slategray !important;
+
+                  }
+    </style>
         <link href="Content/bootstrap.min.css" rel="stylesheet" />
         <link href="Content/font-awesome.min.css" rel="stylesheet" />
         <script src="scripts/jquery-3.3.1.min.js"></script>
@@ -189,6 +291,7 @@
                    echo'</thead>';
             while ($row =mysqli_fetch_assoc($result)) {
                 $e1=$row["eid"];
+                $id=$row["iid"];
                 
                 
                 if ($e1 == $_SESSION["username1"]) {
@@ -200,7 +303,10 @@
                    echo'   <td>'.$row["iname"].'</td>';
                    echo'   <td>'.$row["iid"].'</td>';
                    echo'   <td>'.$row["idomain"].'</td>';
-                   echo'   <td>'.$row["project"].'</td>';
+                   echo' <form method="post" action="Eintern2.php">';
+                   echo' <input type="hidden" name="name" value="'.$id.'" />';
+                   echo'   <td>'.$row["project"].'<button class="btn btn-lg pull-right" >View</button></td>';
+                   echo'</form>';
                    echo' </tr>';
                 //    echo' <tr>';
                 //    echo'  <th scope="row">2</th>';

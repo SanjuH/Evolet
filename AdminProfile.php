@@ -5,88 +5,107 @@
 
     <title>Admin Profile</title>
     <style>
-       
-        form {
-            top: 100px;
-        }
-        .nav-align
-{
-        height: 100px;
-        background-color:#d4d1d1;
-}
-.nav-design
-{
-    position: relative;
-    top: 35px;
-    /* margin-left: 129px; */
-    left: -70px;
-    font-size: 20px;
-    /* margin-right: 22px; */
-}
-.li :hover{
-    background-color:white !important;
-    color:black !important;
-    height:50px !important;
-    width:200px !important;
-    text-align:center;
-    border-radius:3px 3px;
-}
-.li :active
-{
-    background-color:white !important;
-    color:black !important;
-}
-.li
-{
-    margin-right:10px;
-}
-.footer
-{
-       background-color: black;
-    width: 100%;
-    height: 150px;
-    color:gray;
+               form {
+                   top: 100px;
+               }
+               .nav-align {
+                   height: 100px;
+                   background-color: #d4d1d1;
+               }
 
-}
+               .nav-design {
+                   position: relative;
+                   top: 35px;
+                   /* margin-left: 129px; */
+                   left: -70px;
+                   font-size: 20px;
+                   /* margin-right: 22px; */
+               }
 
-.icons {
-    display: inline;
-    font-size: 38px;
-    left: 635px;
-    position: relative;
-    top: 20px;
-    
-}
-button:hover
-{
-    color:white !important;
-    background-color:black !important;
-}
-.p-align
-{
-        position: relative;
-    font-size: 20px;
-    top: 15px;
-    left: 750px;
-}
-.icons-align
-{
-    margin-right:10px;
-}
-.p1-align
-{
-        position: relative;
-    top: 20px;
-    left: -32px;
-}
-.b1{
-    font-size:25px;
-    font-family:serif;
-}
-.color
-{
-    color:gray !important;
-}
+               .li :hover {
+                   background-color: white !important;
+                   color: black !important;
+                   height: 50px !important;
+                   width: 200px !important;
+                   text-align: center;
+                   border-radius: 3px 3px;
+               }
+
+               .li :active {
+                   background-color: white !important;
+                   color: black !important;
+               }
+
+               .li {
+                   margin-right: 10px;
+               }
+
+               .footer {
+                   background-color: black;
+                   width: 100%;
+                   height: 150px;
+                   color: gray;
+               }
+
+               .icons {
+                   display: inline;
+                   font-size: 38px;
+                   left: 635px;
+                   position: relative;
+                   top: 20px;
+               }
+
+               button:hover {
+                   color: white !important;
+                   background-color: black !important;
+               }
+
+               .p-align {
+                   position: relative;
+                   font-size: 20px;
+                   top: 15px;
+                   left: 750px;
+               }
+
+               .icons-align {
+                   margin-right: 10px;
+               }
+
+               .p1-align {
+                   position: relative;
+                   top: 20px;
+                   left: -32px;
+               }
+
+               .b1 {
+                   font-size: 25px;
+                   font-family: serif;
+               }
+
+               .color {
+                   color: gray !important;
+               }
+               .thead
+               {
+                   background-color:lightgray;
+               }
+
+               body
+               {
+
+                    background-image:url(images/background-cement-concrete-242236.jpg);
+
+
+               }
+               table {
+                   border-collapse: collapse !important;
+                  
+                }
+
+               table, th, td {
+                   border: 1px solid slategray !important;
+
+                  }
     </style>
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <link href="Content/font-awesome.min.css" rel="stylesheet" />
@@ -138,98 +157,157 @@ button:hover
     $username = "root";
     $password = "";
     $dbname = "evolet";
-    
+
     // Create connection
     $conn = mysqli_connect($servername, $username, $password, $dbname);
     // Check connection
     if (!$conn) {
-        die("Connection failed: " . mysqli_connect_error());
+    die("Connection failed: " . mysqli_connect_error());
     }
     $e='EVT001';
-   
+
     $sql1= "SELECT * from adminpro";
     $result = mysqli_query($conn, $sql1);
     $numrows=mysqli_num_rows($result);
     if ($numrows!=0) {
-        while ($row =mysqli_fetch_assoc($result)) {
-            $e1=$row["aid"];
-           
-            if($e==$e1) {
-                $flag=1;
-                echo' <div>';
-                echo'   <form name="emp" action="" onsubmit="return validate_form();" method="post">';
-                echo'  <table align="center" width="50%" height="100%" cellspacing="2" cellpadding="10" border="5" class="table table-bordered" style="width:850px">';
-                echo'   <tr>';
-                echo'        <td colspan="2" align="center" id="abc"><b>ADMIN PROFILE.</b></td>';
+    while ($row =mysqli_fetch_assoc($result)) {
+    $e1=$row["aid"];
 
-                echo'      </tr>';
-                echo'       <tr>';
-                echo'           <td align="left" valign="top" width="41%"> Name<span></span></td>';
-     
-                echo'         <td width="57%">'.ucfirst($row["aname"]).'</td>';
-                echo'     <tr>';
-                echo'     <td align="left" valign="top" width="41%">ID<span></span></td>';
-                echo'       <td width="57%">' .strtoupper($row["aid"]).'</td>';
+    if($e==$e1) {
+    $flag=1;
+    echo' <div>
+        ';
+        echo'   <form name="emp" action="" onsubmit="return validate_form();" method="post">
+            ';
+            echo'  <table align="center" width="50%" height="100%" cellspacing="2" cellpadding="10" border="5" class="table table-bordered table-design" style="width:850px;font-size:20px;border:1px solid: black !important;">
+                ';
+                echo'
+                <tr class="thead">
+                    ';
+                    echo'
+                    <td colspan="2" align="center" id="abc"><b>ADMIN PROFILE.</b></td>';
 
-                echo'     </tr>';
-                echo'    <tr>';
-                echo'          <td align="left" valign="top" width="41%">Email<span></span></td>';
-                echo'           <td width="57%">' .$row["amail"].'</td>';
+                    echo'
+                </tr>';
+                echo'
+                <tr>
+                    ';
+                    echo'
+                    <td align="left" valign="top" width="41%"> Name<span></span></td>';
 
-                echo'        </tr>';
-                echo'       <tr>';
-                echo'          <td align="left" valign="top" width="41%">Designation</td>';
-                echo'          <td width="57%">'.ucfirst($row["adesig"]).'</td>';
-                echo'     </tr>';
-                echo'      <tr>';
+                    echo'
+                    <td width="57%">'.ucfirst($row["aname"]).'</td>';
+                    echo'
+                <tr>
+                    ';
+                    echo'
+                    <td align="left" valign="top" width="41%">ID<span></span></td>';
+                    echo'
+                    <td width="57%">' .strtoupper($row["aid"]).'</td>';
 
-                echo'        <td align="left" valign="top" width="41%">Contact Number</td>';
-                echo'       <td width="57%">' .$row["aphone"].'</td>';
+                    echo'
+                </tr>';
+                echo'
+                <tr>
+                    ';
+                    echo'
+                    <td align="left" valign="top" width="41%">Email<span></span></td>';
+                    echo'
+                    <td width="57%">' .$row["amail"].'</td>';
 
-                echo'    </tr>';
-                echo'     <tr>';
-                echo'          <td align="left" valign="top" width="41%">Address</td>';
-                echo'   <td width="60%" >' .ucfirst($row["aaddr"]).'</td>';
-                echo'      </tr>';
-               
-                echo'    <tr>';
-                echo'           <td align="left" valign="top" width="41%"> Salary<span></span></td>';
-                echo'            <td width="57%">' .ucfirst('Rs.'.$row["asalary"]).'</td>';
+                    echo'
+                </tr>';
+                echo'
+                <tr>
+                    ';
+                    echo'
+                    <td align="left" valign="top" width="41%">Designation</td>';
+                    echo'
+                    <td width="57%">'.ucfirst($row["adesig"]).'</td>';
+                    echo'
+                </tr>';
+                echo'
+                <tr>
+                    ';
 
-                echo'        </tr>';
-                echo'       <tr>';
-                echo'           <td align="left" valign="top" width="41%"> Gender<span></span></td>';
-                echo'           <td width="57%">' .ucfirst($row["agender"]).'</td>';
+                    echo'
+                    <td align="left" valign="top" width="41%">Contact Number</td>';
+                    echo'
+                    <td width="57%">' .$row["aphone"].'</td>';
 
-                echo'      </tr>';
-                echo'      <tr>';
-                echo'          <td align="left" valign="top" width="41%">Qualification</td>';
-                echo'          <td width="57%">' .ucfirst($row["aquali"]).'</td>';
-                echo'    </tr>';
-               
-                echo'      <tr>';
-                echo'          <td align="left" valign="top" width="41%">Job Location</td>';
-                echo'          <td width="57%">'.ucfirst($row["ajobloc"]).'</td>' ;
+                    echo'
+                </tr>';
+                echo'
+                <tr>
+                    ';
+                    echo'
+                    <td align="left" valign="top" width="41%">Address</td>';
+                    echo'
+                    <td width="60%">' .ucfirst($row["aaddr"]).'</td>';
+                    echo'
+                </tr>';
+
+                echo'
+                <tr>
+                    ';
+                    echo'
+                    <td align="left" valign="top" width="41%"> Salary<span></span></td>';
+                    echo'
+                    <td width="57%">' .ucfirst('Rs.'.$row["asalary"]).'</td>';
+
+                    echo'
+                </tr>';
+                echo'
+                <tr>
+                    ';
+                    echo'
+                    <td align="left" valign="top" width="41%"> Gender<span></span></td>';
+                    echo'
+                    <td width="57%">' .ucfirst($row["agender"]).'</td>';
+
+                    echo'
+                </tr>';
+                echo'
+                <tr>
+                    ';
+                    echo'
+                    <td align="left" valign="top" width="41%">Qualification</td>';
+                    echo'
+                    <td width="57%">' .ucfirst($row["aquali"]).'</td>';
+                    echo'
+                </tr>';
+
+                echo'
+                <tr>
+                    ';
+                    echo'
+                    <td align="left" valign="top" width="41%">Job Location</td>';
+                    echo'
+                    <td width="57%">'.ucfirst($row["ajobloc"]).'</td>' ;
 
 
-                echo'    </tr>';
-
-               
-               
-               
+                    echo'
+                </tr>';
 
 
 
-                echo'     </table>';
-                echo'   </form>';
-                echo'   </div>';
-            }
-        }
-        
-        if($flag!=1)
-        {
-            echo '<h1>Employee Record Not Found</h1>';
-        }
+
+
+
+
+                echo'
+            </table>';
+            echo'
+        </form>';
+        echo'
+    </div>';
+    }
+    }
+
+    if($flag!=1)
+    {
+    echo '<h1>Employee Record Not Found</h1>';
+    }
     }
     ?>
     <div class="footer">

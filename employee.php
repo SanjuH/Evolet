@@ -1,4 +1,4 @@
-﻿
+﻿﻿
 <html>
 <head>
 
@@ -6,7 +6,109 @@
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <link href="Content/font-awesome.min.css" rel="stylesheet" />
     <script src="scripts/jquery-3.3.1.min.js"></script>
-    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>  <style>
+               form {
+                   top: 100px;
+               }
+               .nav-align {
+                   height: 100px;
+                   background-color: #d4d1d1;
+               }
+
+               .nav-design {
+                   position: relative;
+                   top: 35px;
+                   /* margin-left: 129px; */
+                   left: -70px;
+                   font-size: 20px;
+                   /* margin-right: 22px; */
+               }
+
+               .li :hover {
+                   background-color: white !important;
+                   color: black !important;
+                   height: 50px !important;
+                   width: 200px !important;
+                   text-align: center;
+                   border-radius: 3px 3px;
+               }
+
+               .li :active {
+                   background-color: white !important;
+                   color: black !important;
+               }
+
+               .li {
+                   margin-right: 10px;
+               }
+
+               .footer {
+                   background-color: black;
+                   width: 100%;
+                   height: 150px;
+                   color: gray;
+               }
+
+               .icons {
+                   display: inline;
+                   font-size: 38px;
+                   left: 635px;
+                   position: relative;
+                   top: 20px;
+               }
+
+               button:hover {
+                   color: white !important;
+                   background-color: black !important;
+               }
+
+               .p-align {
+                   position: relative;
+                   font-size: 20px;
+                   top: 15px;
+                   left: 750px;
+               }
+
+               .icons-align {
+                   margin-right: 10px;
+               }
+
+               .p1-align {
+                   position: relative;
+                   top: 20px;
+                   left: -32px;
+               }
+
+               .b1 {
+                   font-size: 25px;
+                   font-family: serif;
+               }
+
+               .color {
+                   color: gray !important;
+               }
+               .thead
+               {
+                   background-color:lightgray;
+               }
+
+               body
+               {
+
+                    background-image:url(images/background-cement-concrete-242236.jpg);
+
+
+               }
+               table {
+                   border-collapse: collapse !important;
+                  
+                }
+
+               table, th, td {
+                   border: 1px solid slategray !important;
+
+                  }
+    </style>
 </head>
 <?php
         session_start();
@@ -77,7 +179,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="http://www.evolettechnologies.com">
-                        <img src="images/logo41.png" style="width:300px; height:70px;"/>
+                        <img src="images/logo41.png" style="width:300px; height:70px;" />
                     </a>
                 </div>
 
@@ -96,32 +198,36 @@
         </nav>
     </div>
     <div>
-        <img src="images/wall-175686__480.jpg"  style="height:830px"/>
-        <div class="div1">
-            <div class="emp" style="left:100px">
+        <img src="images/wall-175686__480.jpg" style="height:830px" />
+        <div class="div1" style="height:850px;">
+            <div class="emp" style="left:100px;top:110px">
                 <h2>My Profile</h2>
                 <button id="btn" onclick="location.href='Emp_Profile.php'">View</button>
             </div>
-           
-            <div class="int" style="left:500px">
+
+            <div class="int" style="left:500px;top:-60px">
                 <h2>Interns</h2>
                 <button id="btn" onclick="location.href='Eintern.php'">View</button>
             </div>
-            <div class="int" style="left:900px;top:-160px">
+            <div class="int" style="left:900px;top:-230px">
                 <h2>Leave Application</h2>
                 <button id="btn" onclick="location.href='Emp_LeaveApply.html'">Apply</button>
             </div>
-            <div class="att" style="left:270px;top:-130px" >
+            <div class="att" style="left:99px;top:-135px">
                 <h2>Start Your Day?</h2>
                 <button id="btn" onclick="location.href='strtday.php'">Start</button>
             </div>
-            <div class="att" style="left:690px;top:-300px">
+            <div class="att" style="left:500px;top:-305px">
+                <h2>Take A Break!</h2>
+                <button id="btn" onclick="location.href='break.html'">Break</button>
+            </div>
+            <div class="att" style="left:900px;top:-476px">
                 <h2>Finished Your Day?</h2>
                 <button id="btn" onclick="location.href='endday.php'">Finish</button>
             </div>
         </div>
-    </div> 
-    <div class="footer" >
+    </div>
+    <div class="footer">
         <div>
             <p class="p-align">Follow Us On</p>
             <div>

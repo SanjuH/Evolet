@@ -15,7 +15,7 @@
         }
             ?>
 				
-<body style="overflow-x:hidden;height:900px">
+<body style="overflow-x:hidden;height:100%">
     <div>
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container-fluid nav-align">
@@ -47,7 +47,7 @@
         </nav>
     </div>
     <div>
-        <img src="images/wall-175686__480.jpg" style="width:100%;height:900px" />
+        <img src="images/wall-175686__480.jpg" style="width:100%;height:1100px" />
         <div style="position:relative;left:200px;font-family:sans-serif;top:70px">
             <div class="emp" style="position:relative;left:-140px">
                 <h2>Employee Details</h2>
@@ -65,19 +65,23 @@
                 <h2>My Profile</h2>
                 <button id="btn" onclick="location.href='AdminProfile.php'">View</button>
             </div>
-            <div class="emp" style="position:relative;top:-300px;left:260px">
+            <div class="emp" style="position:relative;top:-300px;left:60px">
                 <h2>Create Account For HR</h2>
                 <button id="btn" onclick="location.href='hrreg.html'">Create</button>
             </div>
-            <div class="emp" style="position:relative;top:-470px;left:660px">
+            <div class="emp" style="position:relative;top:-470px;left:460px">
                 <h2>Create Account For Counseller</h2>
                 <button id="btn" onclick="location.href='counselreg.html'">Create</button>
+            </div>
+            <div class="emp" style="position:relative;top:-640px;left:860px">
+                <h2>View Break Requests</h2>
+                <button id="btn" onclick="location.href='vbreak.php'">View</button>
             </div>
         </div>
     </div>
    
 
-    <div class="footer" style="position:relative;top:-100px">
+    <div class="footer" style="position:relative;top:-80px">
         <div>
             <p class="p-align">Follow Us On</p>
             <div>
