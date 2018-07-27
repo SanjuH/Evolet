@@ -112,54 +112,8 @@
     
 </body>
 </html>
-<html>
-  <head>
-    <style type="text/css">
-    table {
-    	border-collapse: collapse;
-    }        
-    td {
-    	border: 1px solid green;
-    	padding: 0 0.5em;
-    }        
-    </style>
-  </head>
-  <body>
-	<?php
-	include 'reader.php';
-    $excel = new Spreadsheet_Excel_Reader();
-	?>
-	
-    
-    
-	
-	
-  </body>
-</html>
-
 <?php
-if($_FILES["file"]["error"]>0)
-{
-    echo 'error';
-}
-elseif(filetype($_FILES["file"]["name"])!='file')
-{
-    echo 'error';
-}
-
-else{
-   
-    move_uploaded_file($_FILES["file"]["tmp_name"],"/xampp/htdocs/Evolet/Resume".$_FILES["file"]["name"]); 
-    $file = fopen($_FILES["file"]["name"], "r") or exit("Unable to open file!");
-    
-
-    echo'<div style="text-align:center ;font-size:40px;top:30%;position:absolute;left:25%">';
-    echo '<h1>File Uploaded Successfully</h1>';
-    echo '</div>';
-//header("Refresh: 2; url=employee.php");
-$excel->read($_FILES["file"]["name"]);    
-    $x=2;
-    $servername = "localhost";
+$servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "evolet";
@@ -170,26 +124,32 @@ $conn = mysqli_connect($servername, $username, $password, $dbname);
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
-    while($x<=$excel->sheets[0]['numRows']) {
-  
-      $y=1;$i=0;
-      while($y<=$excel->sheets[0]['numCols']) {
-        $cell = isset($excel->sheets[0]['cells'][$x][$y]) ? $excel->sheets[0]['cells'][$x][$y] : '';
-        $col[$i]=$cell;
-        $y++;
-        $i++;
-      }  
-      
-      $x++;
-      
-      $sql1="INSERT INTO internresume(name,email,phone,addr,dpay,field,quali,exp1,skills,gen) values ('$col[0]','$col[1]','$col[2]','$col[3]','$col[4]','$col[5]','$col[6]','$col[7]','$col[8]','$col[9]')";
-      if (mysqli_query($conn, $sql1)) {
-          
-      }
-      else{
-        echo  'error;';
-      }
-    }
+$e=$_POST['email'];
+$p=$_POST['pwd'];
+$sql1= "SELECT aname,aemail,apwd from admin";
+$result = mysqli_query($conn, $sql1);
+$row = mysqli_fetch_assoc($result);
+$e1=$row["aemail"];
+$p1=$row["apwd"];
+$user=$row["aname"];
+
+if($e == $e1 && $p == $p1)
+{
+    session_start();
+	$_SESSION['sess_user']=$user;
+	$_SESSION['username']=$user;
+    header('Location: Admin.php');
+
 }
-fclose($file);
+else
+{
+    echo'<div style="text-align:center ;font-size:40px;top:30%;position:absolute;left:25%">';
+    echo "Invalid Credentials";
+    echo '</div>';
+    header("Refresh: 2; url=Adminlog.html");
+  
+    
+
+}
+mysqli_close($conn);
 ?>

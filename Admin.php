@@ -1,4 +1,4 @@
-﻿
+﻿﻿
 <html>
 <head>
 
@@ -7,6 +7,7 @@
     <link href="Content/font-awesome.min.css" rel="stylesheet" />
     <script src="scripts/jquery-3.3.1.min.js"></script>
     <script src="scripts/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
 <?php
         session_start();
@@ -14,7 +15,7 @@
             header('Location: Adminlog.html');
         }
             ?>
-				
+
 <body style="overflow-x:hidden;height:100%">
     <div>
         <nav class="navbar navbar-default navbar-fixed-top">
@@ -28,7 +29,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="http://www.evolettechnologies.com">
-                        <img src="images/logo41.png" style="height:70px;width:300px"/>
+                        <img src="images/logo41.png" style="height:70px;width:300px" />
                     </a>
                 </div>
 
@@ -47,39 +48,62 @@
         </nav>
     </div>
     <div>
-        <img src="images/wall-175686__480.jpg" style="width:100%;height:1100px" />
-        <div style="position:relative;left:200px;font-family:sans-serif;top:70px">
-            <div class="emp" style="position:relative;left:-140px">
-                <h2>Employee Details</h2>
-                <button id="btn" onclick="location.href='Employee_Details.html'">Manage Employee</button>
-            </div>
-            <div class="int" style="position:relative;left:260px">
-                <h2>Intern Details</h2>
-                <button id="btn" onclick="location.href='Intern_Details.html'">Manage Interns</button>
-            </div>
-            <div class="att" style="position:relative;left:660px;top:-160px">
-                <h2>Attendance Details</h2>
-                <button id="btn" onclick="location.href='Attendance_Details.html'">View</button>
-            </div>
-            <div class="pro" style="position:relative;left:1060px;top:-330px">
-                <h2>My Profile</h2>
-                <button id="btn" onclick="location.href='AdminProfile.php'">View</button>
-            </div>
-            <div class="emp" style="position:relative;top:-300px;left:60px">
-                <h2>Create Account For HR</h2>
-                <button id="btn" onclick="location.href='hrreg.html'">Create</button>
-            </div>
-            <div class="emp" style="position:relative;top:-470px;left:460px">
-                <h2>Create Account For Counseller</h2>
-                <button id="btn" onclick="location.href='counselreg.html'">Create</button>
-            </div>
-            <div class="emp" style="position:relative;top:-640px;left:860px">
-                <h2>View Break Requests</h2>
-                <button id="btn" onclick="location.href='vbreak.php'">View</button>
-            </div>
-        </div>
+    
+       
+        
+        <img src="images/art-artist-black-and-white-265047.jpg" style="width:100%;height:1100px;opacity:20" />
+        <div style="position:relative;left:200px;font-family:sans-serif;top:70px;height:1200px;">
+
+            
+
+            <a href="Employee_Details.html" style="text-decoration:none; box-shadow:lightgray 10px 10px inset;" class="hv">
+                <div class="emp" style="position:relative;left:460px;background-color:slategray !important;">
+                    <h2 style="font-family: 'Raleway', sans-serif; position: relative; top: 50px;">Employee Details</h2>
+                    
+                </div>
+            </a>
+
+            <a href="Intern_Details.html" style="text-decoration:none">
+                <div class="int" style="position:relative;left:860px;background-color:slategray; !important;">
+                    <h2 style="font-family: 'Raleway', sans-serif; position: relative; top: 50px;">Intern Details</h2>
+
+                </div>
+            </a>
+            <a href="Attendance_Details.html" style="text-decoration:none">
+                <div class="att" style="position:relative;left:460px;top:221px;background-color:slategray !important;">
+                    <h2 style="font-family: 'Raleway', sans-serif; position: relative; top: 50px;">Attendance Details</h2>
+
+                </div>
+            </a>
+            <a href="employee.php" style="text-decoration:none">
+                <div class="emp" style="position:relative;top:-139px;left:860px;background-color:slategray !important;">
+                    <h2 style="font-family: 'Raleway', sans-serif; position: relative; top: 50px;">Create Account For HR</h2>
+
+                </div>
+            </a>
+            <a href="employee.php" style="text-decoration:none">
+                <div class="emp" style="position:relative;top:-310px;left:460px;background-color:slategray !important;">
+                    <h2 style="font-family: 'Raleway', sans-serif; position: relative; top: 40px;">Create Account For Counsellor</h2>
+
+                </div>
+            </a>
+            <a href="vbreak.php" style="text-decoration:none">
+                <div class="emp" style="position:relative;top:-290px;left:860px;background-color:slategray !important;">
+                    <h2 style="font-family: 'Raleway', sans-serif; position: relative; top: 50px;">View Break Requests</h2>
+
+                </div>
+            </a>
+           
+                <div style="height: 530px;    height: 530px;  position: relative; top: -840px; left: 40px;background-color:slategray !important;" class="emp">
+                    <h2 style="position: relative;top: 70px;font-family: 'Raleway', sans-serif;">My Profile</h2>
+                    <span class="dot"></span>
+                    <i><span class="fa fa-user-circle" style="font-size: 160px;position: relative;top: 90px;left: 92px;"></span></i>
+                    <a href="AdminProfile.php" style="color:black !important;"><button class="btn btn-lg " style="position: relative; top: 210px; left: -55px; height: 65px; width: 135px;">VIEW</button></a> 
+                </div>
+            </a>
+</div>
     </div>
-   
+
 
     <div class="footer" style="position:relative;top:-80px">
         <div>

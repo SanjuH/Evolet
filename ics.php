@@ -388,7 +388,7 @@
                     echo'  </tr>';
                     echo' <tr style="height:45px">';
                     echo'   <td align="left" valign="top" width="41%">&nbsp;&nbsp;Work Experience<span></span></td>';
-                    echo'   <td width="57%">'.$row["exp"].'</td>';
+                    echo'   <td width="57%">'.$row["exp1"].'</td>';
 
                     echo'  </tr>';
 

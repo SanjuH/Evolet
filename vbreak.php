@@ -314,15 +314,21 @@ $sql1= "SELECT * from breakr";
                 }
                 echo' </tbody>';
                 echo'</table>';
+               
               
             
+        }
+        else{
+            echo'<div style="text-align:center ;font-size:40px;top:40%;position:absolute;left:35%">';
+            echo '<h1>There are no Break Requests at the time</h1>';
+            echo '</div>';
         }
 
 
 
 mysqli_close($conn);
 ?>
-<div class="footer" style="position:relative;top:500px;">
+<div class="footer" style="position:relative;top:540px;">
             <div>
                 <p class="p-align">Follow Us On</p>
                 <div>

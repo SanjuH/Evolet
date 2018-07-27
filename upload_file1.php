@@ -149,7 +149,7 @@ elseif(filetype($_FILES["file"]["name"])!='file')
 
 else{
    
-    move_uploaded_file($_FILES["file"]["tmp_name"],"/xampp/htdocs/Evolet/Resume".$_FILES["file"]["name"]); 
+    move_uploaded_file($_FILES["file"]["tmp_name"],"/xampp/htdocs/Evolet/Interns".$_FILES["file"]["name"]); 
     $file = fopen($_FILES["file"]["name"], "r") or exit("Unable to open file!");
     
 
@@ -181,10 +181,10 @@ if (!$conn) {
       }  
       
       $x++;
-      
-      $sql1="INSERT INTO internresume(name,email,phone,addr,dpay,field,quali,exp1,skills,gen) values ('$col[0]','$col[1]','$col[2]','$col[3]','$col[4]','$col[5]','$col[6]','$col[7]','$col[8]','$col[9]')";
+   
+      $sql1="INSERT INTO intern(iname,iid,idesig,isalary,iphone,iaddr,idomain,iloc,iskills,iquali,iemail,igender,eid,project) values ('$col[0]','$col[1]','$col[2]','$col[3]','$col[4]','$col[5]','$col[6]','$col[7]','$col[8]','$col[9]','$col[10]','$col[11]','$col[12]','$col[13]')";
       if (mysqli_query($conn, $sql1)) {
-          
+          echo 'SUCCESS';
       }
       else{
         echo  'error;';

@@ -1,4 +1,4 @@
-﻿body{
+﻿﻿body{
     background-color: rgba(0, 0, 0, 0.37);
 }
 body img{
@@ -7,19 +7,21 @@ body img{
     height: 100%;
 }
 .emp{
-    background-color: rgba(150, 143, 143, 0.37);
+    background-color: black;
     width: 350px;
     height: 150px;
     color: white;
     border-radius:10px; 
-    top: 180px;
+    top: 20px;
     position: relative;
     left: 300px;
+       
 }
 .emp h2{
     font-size: 26px; 
     text-align: center;
     padding: 10px;
+    font-family: 'Raleway', sans-serif;
 }
 #btn{
     border-radius: 10px;
@@ -32,7 +34,7 @@ body img{
     left: 100px;
 }
 #btn:hover{
-    background-color: rgba(0, 0, 0, 0.31);
+    background-color: black;
     color: white;
     width: 170px;
     height: 60px;
@@ -40,37 +42,39 @@ body img{
     
 }
 .int{
-    background-color: rgba(150, 143, 143, 0.37);
+    background-color: black;
     width: 350px;
     height: 150px;
     color: white;
     border-radius:10px; 
-    top:10px;
-    left: 673px;
+    top:-150px;
+    left: 800px;
     position: relative;
 }
 .int h2{
     font-size: 26px; 
     text-align: center;
     padding: 10px;
+    font-family: 'Raleway', sans-serif;
 }
 .att{
-    background-color: rgba(150, 143, 143, 0.37);
+    background-color:black;
     width: 350px;
     height: 150px;
     color: white;
     border-radius:10px; 
-    top:10px;
-    left: 673px;
+    top:145px;
+    left: 350px;
     position: relative;
 }
 .att h2{
     font-size: 26px; 
     text-align: center;
     padding: 10px;
+    font-family: 'Raleway', sans-serif;
 }
 .pro{
-    background-color: rgba(150, 143, 143, 0.37);
+    background-color: black;
     width: 350px;
     height: 150px;
     color: white;
@@ -83,7 +87,44 @@ body img{
     font-size: 26px; 
     text-align: center;
     padding: 10px;
+    font-family: 'Raleway', sans-serif;
 }
+.break
+{
+    background-color: black;
+    width: 350px;
+    height: 150px;
+    color: white;
+    border-radius:10px; 
+    top: -160px;
+    left: 300px;
+    position: relative;
+}
+.break h2
+{
+    font-size: 26px; 
+    text-align: center;
+    padding: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+.emp:hover
+ {
+    transform: scale(1.1);
+    
+}
+.dot
+{
+   
+   height: 150px;
+    width: 150px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+   
+}
+
+
 .nav-align
 {
         height: 100px;
@@ -152,4 +193,12 @@ body img{
 .color
 {
     color:gray !important;
+}
+.prof
+{
+           position: relative;
+    top: 210px;
+    left: -55px;
+    height: 65px;
+    width: 135px;
 }
